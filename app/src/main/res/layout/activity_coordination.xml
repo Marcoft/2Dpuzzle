@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
+    style="@style/AppTheme"
+    tools:context=".Coordination">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Score : 0"
+        android:textSize="30sp"/>
+
+<RelativeLayout
+    android:layout_weight="1"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:background="@drawable/tropical_fish"
+        android:backgroundTint="@color/Black"
+        android:layout_width="80dp"
+        android:layout_centerInParent="true"
+        android:layout_height="80dp"
+        android:padding="20dp"/>
+    <ImageView
+        android:layout_marginLeft="20sp"
+        android:id="@+id/img2"
+        android:background="@drawable/tropical_fish"
+        android:backgroundTint="@color/Black"
+        android:layout_width="80dp"
+        android:layout_below="@id/img"
+        android:layout_height="80dp"
+        android:padding="20dp"/>
+    <ImageView
+        android:layout_marginLeft="20sp"
+        android:id="@+id/img3"
+        android:background="@drawable/tropical_fish"
+        android:backgroundTint="@color/Black"
+        android:layout_width="80dp"
+        android:layout_above="@id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_height="80dp"
+        android:padding="20dp"/>
+
+    <ImageView
+        android:layout_marginRight="20sp"
+        android:id="@+id/img4"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tropical_fish"
+        android:backgroundTint="@color/Black"
+        android:layout_width="80dp"
+        android:layout_below="@id/img"
+        android:layout_height="80dp"
+        android:padding="20dp"/>
+    <ImageView
+        android:layout_marginRight="20sp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/img5"
+        android:background="@drawable/tropical_fish"
+        android:backgroundTint="@color/Black"
+        android:layout_width="80dp"
+        android:layout_above="@id/img"
+        android:layout_marginBottom="20dp"
+        android:layout_height="80dp"
+        android:padding="20dp"/>
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Верх"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Влево"
+                android:id="@+id/btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:text="Вправо"
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:text="Вниз"
+            android:id="@+id/btn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

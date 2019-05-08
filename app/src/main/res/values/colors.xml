@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D324E</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color1">#EFE046</color>
+    <color name="color2">#1B998B</color>
+    <color name="color3">#0D324E</color>
+    <color name="color4">#098178</color>
+    <color name="color5">#E4E0EF</color>
+    <color name="Green">#7FFF00</color>
+    <color name="Orange">#FFA500</color>
+    <color name="Red">#FF0000</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="White">#FFFFFF</color>
+    <color name="White2">#717ECF</color>
+    <color name="Gray">#D8D3C4</color>
+    <color name="Yellow">#FFEB3B</color>
+    <color name="Black">#000000</color>
+    <color name="Purple">#800080</color>
+    <color name="Blue">#0000FF</color>
+    <color name="Blue2">#7AABDF</color>
+    <color name="Violet">#EE82EE</color>
+    <color name="colorAppDivider">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colortWhite">#CCCCCC</color>
+
+    <array name="rainbow">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/Green</item>
+        <item>@color/Orange</item>
+        <item>@color/Red</item>
+        <item>@color/Pink</item>
+        <item>@color/White</item>
+        <item>@color/Yellow</item>
+        <item>@color/Black</item>
+        <item>@color/Purple</item>
+        <item>@color/Blue</item>
+        <item>@color/Violet</item>
+    </array>
+
+</resources>

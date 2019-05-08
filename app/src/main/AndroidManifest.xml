@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.admin.a2d_puzzle">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="@android:icon">
+        <activity android:name=".Math_lvls" />
+        <activity
+            android:name=".Truth_or_lie"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Game_of_Color"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Find_a_Match"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordination"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Remember_Last"
+            android:screenOrientation="portrait" />
+        <activity android:name=".My_office" />
+        <activity
+            android:name=".Decrease_growth"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Distribution" />
+        <activity
+            android:name=".Continue_the_row"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Setting" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main" />
+        <activity
+            android:name=".Colords"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RememberAndDisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindNumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logical_comprassion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindImage"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

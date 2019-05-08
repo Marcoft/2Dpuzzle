@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home" />
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:title="Message"
+                android:id="@+id/Message"
+                android:icon="@drawable/ic_message"/>
+            <item android:title="Setting"
+                android:id="@+id/Setting"
+                android:icon="@drawable/ic_settings"/>
+        </menu>
+    </item>
+
+    <item android:title="Free Coins">
+        <menu>
+            <item android:title="Roulette"
+                android:id="@+id/Roulette"
+                android:icon="@drawable/ic_roulette"/>
+            <item android:title="Guess Word"
+                android:id="@+id/Guess_Word"
+                android:icon="@drawable/ic_guess_word"/>
+            <item android:title="Riddle"
+                android:id="@+id/Riddle"
+                android:icon="@drawable/ic_riddle"/>
+
+        </menu>
+    </item>
+
+
+
+</menu>

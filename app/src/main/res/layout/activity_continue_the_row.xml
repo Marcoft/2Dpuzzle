@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/My_drawer"
+    style="@style/AppTheme"
+    tools:context=".Continue_the_row">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textColor="#000"
+                android:text=" Time: 35  "
+                android:textSize="30dp"
+                />
+
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/score"
+                    android:textColor="#000"
+                    android:text=" Score: 0  "
+                    android:textSize="30dp"
+                    />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@color/color5"
+        android:layout_weight="5"
+        android:id="@+id/lin2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Продолжи ряд: "
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/text"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="8  |  10  |  12  |  14  |  ?"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/text_row"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <EditText
+        android:enabled="false"
+        android:id="@+id/edt"
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/check"
+        android:background="@color/color2"
+        android:text="Проверить"
+        android:onClick="clickCheck"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/start"
+            android:onClick="startGame"
+            android:background="@color/color2"
+            android:text="Начать"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:background="#3F5185"
+        app:itemTextColor="#FFF"
+        app:itemIconTint="#FFF"
+        app:menu="@menu/navigation_drawer"
+        android:layout_gravity="start"
+        android:padding="16dp"
+        app:headerLayout="@layout/header"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

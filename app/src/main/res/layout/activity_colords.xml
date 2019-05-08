@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
+    style="@style/AppTheme"
+    tools:context=".Colords">
+
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:text="Совпадает ли название цвета на левой карточке с цветом текста на правой карточке?"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="italic"
+                android:gravity="left"
+                android:id="@+id/time"
+                android:text="Время :  20 c"
+                android:layout_marginRight="20dp"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/score"
+                android:text="Очки :  0"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_weight="3"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:textStyle="bold|italic"
+        android:background="@color/White2"
+        android:clickable="false"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Yellow"
+        android:textColor="@color/Green"
+        android:textSize="25dp"
+        android:id="@+id/btn_1"
+        />
+
+
+    <Button
+        android:textStyle="bold"
+        android:background="@color/White2"
+        android:clickable="false"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textColor="@color/Blue"
+        android:text="Blue"
+        android:textSize="25dp"
+        android:id="@+id/btn_2"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="#C2E8E2"
+        android:id="@+id/btn_no"
+        android:onClick="onClick"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нет"
+        android:drawableLeft="@drawable/ic_no"
+        android:textSize="15dp"
+        />
+    <Button
+        android:layout_margin="5dp"
+        android:background="#C2E8E2"
+        android:id="@+id/btn_yes"
+        android:onClick="onClick"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_yes"
+        android:text="Да"
+        android:textSize="15dp"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:onClick="PlayGame1"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
